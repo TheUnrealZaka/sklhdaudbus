@@ -42,7 +42,7 @@ jobs:
       run: msbuild /m /p:Configuration=${{env.BUILD_CONFIGURATION}} /p:Platform=x64 ${{env.SOLUTION_FILE_PATH}}
 
     - name: Archive content
-      uses: thedoctor/zip-release@master
+      uses: thedoctor0/zip-release@master
       with:
         filename: driver.zip
 
